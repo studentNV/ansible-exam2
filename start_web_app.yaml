@@ -1,0 +1,7 @@
+---
+- hosts: web-exam
+  become: yes
+  roles:
+    - install_and_start_docker
+    - create_net_docker
+    - start_web_app

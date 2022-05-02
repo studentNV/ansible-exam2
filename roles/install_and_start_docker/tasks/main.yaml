@@ -1,0 +1,16 @@
+---
+- name: Add Docker repo
+  get_url:
+    url: "{{ docker_url_repo }}"
+    dest: "{{ docker_dest_repo }}"
+
+- name: Install Docker
+  package:
+    name: docker-ce, python-docker
+    state: latest
+
+- name: Start Docker service
+  service:
+    name: docker
+    state: started
+    enabled: yes
