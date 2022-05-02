@@ -1,6 +1,4 @@
 ---
-- include_vars: ../../create_net_docker/defaults/main.yaml
-
 - name: Log into DockerHub
   docker_login:
     username: "{{ login_dockerhub }}"

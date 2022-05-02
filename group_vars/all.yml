@@ -1,0 +1,3 @@
+---
+network_ansible_web:	  "network_ansible"
+docker_ports: 		      [5050,5070,5040]

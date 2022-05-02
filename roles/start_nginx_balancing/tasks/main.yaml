@@ -1,8 +1,4 @@
 ---
-- include_vars: ../../start_web_app/defaults/main.yaml
-
-- include_vars: ../../create_net_docker/defaults/main.yaml
-
 - name: Template a file to /etc/nginx/nginx.conf
   ansible.builtin.template:
     src: "{{ template_nginx_src }}"
